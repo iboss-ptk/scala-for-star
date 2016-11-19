@@ -8,7 +8,7 @@ class FunWithLists$Test extends FunSuite with Matchers{
 
   test("should return list of labels"){
     val expected = List("Activision", "Zenga", "Zenga", "EA", "EA")
-    FunWithLists labels (games) should equal (expected)
+    FunWithLists labels games should equal (expected)
   }
 
   /* 1 BONUS POINT : complete this using only higher order functions */
@@ -18,7 +18,7 @@ class FunWithLists$Test extends FunSuite with Matchers{
 
   /* 1 BONUS POINT : complete this using recursion */
   test("should return the total ratings of all games"){
-    FunWithLists totalRatingsOf (games) should equal (270)
+    FunWithLists totalRatingsOf games should equal (270)
   }
 
   /* 1 BONUS POINT : complete this in an imperative style */
