@@ -11,4 +11,24 @@ object Calculator {
 
   def sumFactorial(a: Int, b: Int): Int = ???
 
+
+  //implement here for sum function
+
+
+  //
+
+  def productInts(a: Int, b: Int): Int =
+    if (a > b) 1
+    else a * productInts(a + 1, b)
+
+  def productCubes(a: Int, b: Int): Int = ???
+
+  def productFactorials(a: Int, b: Int): Int = ???
+
+
+  //implement here for product function
+
+
+  //
+
 }
