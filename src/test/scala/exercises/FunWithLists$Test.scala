@@ -41,11 +41,7 @@ class FunWithLists$Test extends FunSuite with Matchers{
     findByActivision (games) should equal (List(Game("Activision", 30)))
   }
 
-  test("should return a List of tuples consisting of game label and game"){
-    val expected = List(("ACTIVISION",Game("Activision",30)), ("ZENGA",Game("Zenga",60)), ("ZENGA",Game("Zenga",10)), ("EA",Game("EA",60)), ("EA",Game("EA",110)))
-    val labelToUpper = (g:Game) => g.label.toUpperCase
-    FunWithLists zipWithKey (labelToUpper, games) should equal (expected)
-  }
+
 
   /* 2 BONUS POINTS : uncomment test and make it pass
   test("find first game with rating of 60 using curried function"){

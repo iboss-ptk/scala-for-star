@@ -16,6 +16,4 @@ object FunWithLists {
 
   def createFunctionToFindGamesByLabel(label: String):(List[Game]) => List[Game] = identity(_)
 
-  def zipWithKey = (f: (Game) => String, ls: List[Game]) => Nil
-
 }
