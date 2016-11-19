@@ -7,19 +7,37 @@ object Calculator {
 
   def sumCube(a: Int, b: Int): Int =
     if (a > b) 0
-    else a * a * a + sumCube(a + 1, b)
+    else cube(a) + sumCube(a + 1, b)
 
-  def sumFactorial(a: Int, b: Int): Int = ???
+  def sumFactorial(a: Int, b: Int): Int =
+    if (a > b) 0
+    else factorial(a) + sumFactorial(a + 1, b)
+
+  def factorial(a: Int): Int =
+    if (a == 0) 1
+    else a * factorial(a - 1)
+
+  def cube(a: Int): Int = a * a * a
 
 
-  //implement here for sum function
+  //implement sum using higher order function
+  def sum(f: Int => Int, a: Int, b: Int): Int = ???
+
+  def sumFactorialsHOF(a: Int, b: Int): Int = ???
+
+  def sumCubesHOF(a: Int, b: Int): Int = ???
+
+  def sumIntsHOF(a: Int, b: Int): Int = ???
 
 
-  //
+  //implement sum using currying syntax
 
-  def productInts(a: Int, b: Int): Int =
-    if (a > b) 1
-    else a * productInts(a + 1, b)
+
+  //implement product using currying syntax
+
+
+  // implement product for each function
+  def productInts(a: Int, b: Int): Int = ???
 
   def productCubes(a: Int, b: Int): Int = ???
 
@@ -27,6 +45,7 @@ object Calculator {
 
 
   //implement here for product function
+  //find common pattern of sum and product and implement mapReduce
 
 
   //
