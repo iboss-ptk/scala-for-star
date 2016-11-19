@@ -11,17 +11,17 @@ class FunWithLists$Test extends FunSuite with Matchers{
     FunWithLists labels games should equal (expected)
   }
 
-  /* 1 BONUS POINT : complete this using only higher order functions */
-  test("should return the average rating of games belonging to Zenga"){
-    FunWithLists averageRatingsOf ("Zenga", games) should equal (35)
-  }
-
   /* 1 BONUS POINT : complete this using recursion */
   test("should return the total ratings of all games"){
     FunWithLists totalRatingsOf games should equal (270)
   }
 
-  /* 1 BONUS POINT : complete this in an imperative style */
+  /* 1 BONUS POINT : complete this using only higher order functions */
+  test("should return the average rating of games belonging to Zenga"){
+    FunWithLists averageRatingsOf ("Zenga", games) should equal (35)
+  }
+
+
   test("should return the total ratings of EA games"){
     FunWithLists totalRatingsOfLabel ("EA", games) should equal (170)
   }
