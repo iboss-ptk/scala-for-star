@@ -8,6 +8,8 @@
 
 // type inference
 
+// ----- break ------------
+
 // booleans
 
 // strings
@@ -18,4 +20,5 @@
 
 // method and functions
 
-// class and object
+// class
+
