@@ -47,17 +47,17 @@ class Calculator$Test extends FunSuite with Matchers {
   * Using Higher Order Function
   * */
 
-  test("should return the sum of the integers between expected numbers") {
+  test("should return the sumHOF of the integers between expected numbers") {
     val expected = 2 + 3 + 4
     Calculator sumIntsHOF (2,4) should equal (expected)
   }
 
-  test("should return the sum of cube of all the integers between expected numbers") {
+  test("should return the sumHOF of cube of all the integers between expected numbers") {
     val expected = 2*2*2 + 3*3*3 + 4*4*4
     Calculator sumCubesHOF (2,4) should equal (expected)
   }
 
-  test("should return the sum of factorials of all integers between expected numbers") {
+  test("should return the sumHOF of factorials of all integers between expected numbers") {
     val expected = 2*1 + 3*2*1 + 4*3*2*1
     Calculator sumFactorialsHOF (2,4) should equal (expected)
   }
